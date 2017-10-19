@@ -3,5 +3,7 @@
 
 
 (defn -main [& args]
-  (jna/invoke Integer c/printf "My number: %d\n" 5)
+  (println
+    (jna/invoke Integer foo/foomult 200 2))
+
   (println "Hello, World!"))
