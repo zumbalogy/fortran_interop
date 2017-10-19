@@ -1,6 +1,7 @@
-(ns fortran-interop.core)
+(ns fortran-interop.core
+  (require [net.n01se.clojure-jna :as jna]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+
+(defn -main [& args]
+  (jna/invoke Integer c/printf "My number: %d\n" 5)
+  (println "Hello, World!"))
