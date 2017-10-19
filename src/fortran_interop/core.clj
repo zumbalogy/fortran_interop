@@ -5,5 +5,4 @@
 (defn -main [& args]
   (println
     (jna/invoke Integer foo/foomult 200 2))
-
   (println "Hello, World!"))
