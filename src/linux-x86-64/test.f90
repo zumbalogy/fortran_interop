@@ -1,10 +1,11 @@
 function main(a, b) ! bind(C, name='main') ! works without binding
   implicit none
-  integer, value :: a, b
+  integer, value :: a
+  integer :: b(1)
   integer :: main
   integer :: f2
 
-  main = f2(a) * b
+  main = f2(a) - b(1)
 end function main
 
 function f2(a)
@@ -12,5 +13,5 @@ function f2(a)
   integer :: a
   integer :: f2
 
-  f2 = a + 1
+  f2 = a + 2
 end function
