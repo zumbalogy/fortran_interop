@@ -1,14 +1,15 @@
-# fortran_interop
 
-A Clojure library designed to ... well, that part is up to you.
 
-## Usage
+remember to compile the fortran before running.
 
-FIXME
+./compile_fortran.sh; lein run
 
-## License
 
-Copyright © 2017 FIXME
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+some useful links
+
+https://alm.engr.colostate.edu/cb/wiki/16999#section-Array+Arguments
+
+https://github.com/zumbalogy/fortran_interop
+
+https://github.com/lukeasrodgers/frepl
