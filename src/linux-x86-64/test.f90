@@ -27,9 +27,9 @@ end function
 ! end function map_inc
 
 subroutine foo(a) bind(c, name='foo')
-   use, intrinsic :: iso_c_binding, only : c_double
+   !use, intrinsic :: iso_c_binding, only : c_double
    implicit none
-   integer :: a(1)
+   integer :: a(1) ! a(*) also works
 
    a(1) = 99
 
