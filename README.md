@@ -1,9 +1,8 @@
 
 
-remember to compile the fortran before running.
+remember to compile the fortran before running. The directory name that contains the Fortran code must also be the same name as the target platform.
 
 ./compile_fortran.sh; lein run
-
 
 
 some useful links
